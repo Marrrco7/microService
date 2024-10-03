@@ -12,7 +12,7 @@ public class sayHelloController {
         @GetMapping(    "/greet")
     public Map<String, String> greetUser() {
         Map<String, String> response = new HashMap<>();
-        response.put("message", "Hello, World!");
+        response.put("message", "Hello World!");
         response.put("timestamp", LocalDateTime.now().toString());
         return response;
     }
